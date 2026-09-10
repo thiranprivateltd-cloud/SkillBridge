@@ -1,6 +1,7 @@
 // src/index.js
 require('dotenv').config();
 const express      = require('express');
+const cors         = require('cors');
 const listingsRoute      = require('./routes/listings');
 const studentsRoute      = require('./routes/students');
 const applicationsRoute  = require('./routes/applications');
@@ -8,6 +9,7 @@ const applicationsRoute  = require('./routes/applications');
 const app  = express();
 const PORT = process.env.PORT || 3000;
 
+app.use(cors());
 app.use(express.json());
 
 // Health-check
