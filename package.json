@@ -1,0 +1,16 @@
+{
+  "name": "skillbridge-backend",
+  "version": "1.0.0",
+  "description": "SkillBridge core matching engine – SIH 2026 PS26044",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test:engine": "node tests/testMatchingEngine.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "pg": "^8.12.0"
+  }
+}
